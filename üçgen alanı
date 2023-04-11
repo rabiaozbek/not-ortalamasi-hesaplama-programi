@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class üçgenalanı {
+    public static void main(String[]args){
+        //üçgenin çevresi = 2u
+        //u=(a+b+c)/2
+        //üçgenin alanı =u*(u-a)*(u-b)*(u-c):alan*alan
+
+
+        //değişkenkeri oluştur
+        int a;
+        int b;
+        int c;
+        double çevre;
+        double alan;
+        //scanner sınıfını tanımla
+        Scanner alanı = new Scanner(System.in);
+        //kullanıcan verileri al
+        System.out.println("1.kenarı giriniz:");
+        a = alanı.nextInt();
+        System.out.println("2.kenarı giriniz:");
+        b = alanı.nextInt();
+        System.out.println("3.kenarı giriniz:");
+        c = alanı.nextInt();
+        çevre = (a+b+c)/2;
+        alan =Math.sqrt(çevre*(çevre-a)*(çevre-b)*(çevre-c));
+        System.out.println(alan);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+}
